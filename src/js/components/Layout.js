@@ -1,4 +1,18 @@
-import React from "react";
+import  React from "react"
+import Header from "./Header";
+import Footer from "./Footer";
+export default class Layout extends  React.Component{
+  render() {
+    return (
+        <div>
+            <Header/>
+            <Footer/>
+        </div>
+    )
+  }
+}
+
+/*import React from "react";
 
 import Footer from "./Footer";
 import Header from "./Header";
@@ -23,4 +37,4 @@ export default class Layout extends React.Component {
       </div>
     );
   }
-}
+}*/

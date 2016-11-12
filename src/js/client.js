@@ -1,6 +1,12 @@
 import React from "react";
-import { render } from 'react-dom';
-class Layout extends React.Component{
+import ReactDOM from 'react-dom';
+
+import Layout from "./components/Layout";
+
+const app = document.getElementById('app');
+ReactDOM.render(<Layout/>,app);
+
+/*class Layout extends React.Component{
     constructor(){
         super();
         this.name = "rupesh";
@@ -17,4 +23,4 @@ class Layout extends React.Component{
         )
     }
 };
-render(<Layout/>, window.document.getElementById('app'));
+render(<Layout/>, window.document.getElementById('app'));*/
