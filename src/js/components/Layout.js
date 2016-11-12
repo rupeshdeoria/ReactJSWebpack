@@ -2,14 +2,22 @@ import  React from "react"
 import Header from "./Header";
 import Footer from "./Footer";
 export default class Layout extends  React.Component{
-  render() {
-    return (
-        <div>
-            <Header/>
-            <Footer/>
-        </div>
-    )
-  }
+    constructor(){
+      super();
+      this.state = {name:"rupesh"};
+    }
+    render() {
+        setTimeout(
+            ()=>{this.setState({name:"teststate"})},
+            6000)
+        return (
+            <div>
+                {this.state.name}
+                <Header/>
+                <Footer/>
+            </div>
+        )
+    }
 }
 
 /*import React from "react";
